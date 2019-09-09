@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*标题栏*/
+.left{
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+
+}
+.left .left-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 100%;
+    height: 96px;
+}
+.left .left-header .left-header-top{
+    line-height: 96px;
+}
+.left .left-header .left-header-top ul{
+    list-style: none;
+}
+
+
+.left .left-header .left-header-top ul li{
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+.left .left-header .left-header-top ul li img{
+    width: 36px;
+    height: 36px;
+}
+.left .left-header .left-plus{
+    float: right;
+    line-height: 96px;
+    margin-right: 20px;
+}
+/*中部内容*/
+.left .left-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+.left .left-content .content-info{
+    display: inline-block;
+    margin-top: 50%;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.left .left-content .content-footer{
+    margin-top: 30px;
+    margin-left: -20px;
+}
+.left .left-content .content-footer a{
+    text-decoration: none;
+    color: #02A963;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.left .left-content .content-footer a:nth-child(2){
+    border: 1px solid #02a963;
+    border-radius: 20px;
+    padding: 10px;
+}
+/*登录界面中部内容*/
+.left .left-content .left-content-login{
+    border-bottom: 3px solid #00A862;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    display: block;
+    width: 32px;
+}
+.left .left-content .left-content-reg{
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+.left .left-content .left-content-about{
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+
+/*点击后的变换内容*/
+.left .left-content-2{
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+.left .left-content-2 .left-content-2-menu{
+    font-size:1.8rem;
+    font-weight: 700;
+    border-bottom: 1px solid #cccccc;
+}
+.left .left-content-2 .left-content-2-menu ul{
+    list-style: none;
+}
+.left .left-content-2 .left-content-2-menu ul li{
+    line-height: 35px;
+}
+
+.left .left-content-2 .left-content-2-list{
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-bottom: 1px solid #cccccc;
+    margin-top: 10px;
+
+}
+.left .left-content-2 .left-content-2-list ul{
+    list-style: none;
+}
+.left .left-content-2 .left-content-2-list ul li{
+    line-height: 35px;
+
+}
+.left .left-content-2 .content-2-footer{
+    margin-top: 30px;
+    margin-left: -20px;
+
+}
+.left .left-content-2 .content-2-footer a{
+    text-decoration: none;
+    color: #02A963;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.left .left-content-2 .content-2-footer a:nth-child(2) {
+    border: 1px solid #02a963;
+    border-radius: 20px;
+    padding: 10px;
+}
+.active{
+    transform: scale(0.8);
+}
+
+
+
+
+
+
+/*右半部分*/
+.right{
+    width: 70%;
+    float: right;
+    overflow: hidden;
+
+
+}
+@media screen and (max-width: 992px) {
+    .right{
+        width:100%;
+    }
+}
+/*轮播图*/
+.right .right-scroll .carousel{
+    position: relative;
+}
+.right .right-scroll .carousel .carousel-inner .item{
+    width: 100%;
+    height: 100%;
+}
+.right .right-scroll .carousel .carousel-inner .item img{
+
+
+}
+.right .right-scroll .carousel .carousel-control{
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*广告区*/
+.right .right-banner{
+    width: 100%;
+    background: #f7f7f7;
+    margin-left: 0;
+}
+.right .right-banner .col-md-4 img:hover{
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+    transform:translateY(-3px);
+    transition: 0.3s;
+
+}
+
+
+.right .right-banner .col-md-4{
+    overflow: hidden;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.right .right-banner .col-md-4 img {
+    width: 100%;
+
+}
+@media screen and (max-width: 992px) {
+    .right .right-banner .col-md-4{
+        width:33%;
+        float: left;
+    }
+}
+@keyframes mymove
+{
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: -10px;
+    }
+}
+
+/*星享俱乐部*/
+.right .right-club{
+    width: 100%;
+    height: 247px;
+}
+@media screen and (max-width: 682px) {
+    .right .right-club{
+        width: 100%;
+        height: 400px;
+    }
+}
+.right .right-club .content-club{
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+
+}
+
+
+.right .right-club .content-club .club-info{
+    float: left;
+    width: 50%;
+
+}
+@media screen and (max-width: 682px) {
+    .right .right-club .content-club .club-info{
+        width: 100%;
+        text-align: center;
+    }
+}
+.right .right-club .content-club .club-info p{
+    font-size: 16px;
+    margin-top: 40px;
+    line-height: 25px;
+}
+.right .right-club .content-club .club-info .login a{
+    border: 1px solid #02a963;
+    border-radius: 20px;
+    padding:10px 20px 10px 20px;
+    color: #02a963;
+
+}
+.right .right-club .content-club .club-info .info a{
+    text-decoration: none;
+    color: #d4ae61;
+}
+.right .right-club .content-club .club-info .login a{
+    margin-right: 5px;
+}
+
+.right .right-club .content-club .club-logo{
+    float: right;
+    margin-top: 80px;
+
+}
+@media screen and (max-width: 682px) {
+    .right .right-club .content-club .club-logo{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.right .right-club .content-club .club-logo img {
+    width: 283px;
+}
+/*星享俱乐部登录界面*/
+.right .right-club-login{
+    background: url("../images/bg-msr-unlogged.png")no-repeat 0 0;
+    background-size: cover;
+    border-bottom: 4px solid #C2A661;
+    font-size: 1.6rem;
+    font-weight: 400;
+    height: 314px;
+
+}
+.right .right-club-login .flex{
+    width: 55%;
+    height: 314px;
+    margin: 0 auto;
+
+}
+.right .right-club-login .flex .right-club-login-title{
+    width: 440px;
+    height: 100%;
+    float: left;
+}
+.right .right-club-login .flex .right-club-login-title h1{
+    margin-top: 40px;
+}
+.right .right-club-login .flex .right-club-login-title a{
+    border: 1px solid #00A862;
+    border-radius: 48px;
+    box-sizing: border-box;
+    color: #00A862;
+    display: inline-block;
+    font-weight: 500;
+    outline: none;
+    overflow: hidden;
+    padding: 6px 18px;
+    position: relative;
+    transition-duration: 0.1s;
+    transition-property: background, border-color, color;
+    margin-top: 20px;
+
+}
+.right .right-club-login .flex .right-club-login-title .light{
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.56);
+}
+.right .right-club-login .flex .right-club-login-image{
+    width: 200px;
+    height: 100%;
+    float: right;
+    line-height: 314px;
+
+}
+.right .right-club-login .flex .right-club-login-image img{
+    width: 192px;
+}
+
+
+/*星巴克精选*/
+.right .right-nice{
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+    margin-top: -20px;
+
+}
+.right .content-nice{
+    width: 720px;
+    height: 413px;
+    margin: 0 auto;
+
+}
+.right .content-nice .nice-title{
+    text-align: center;
+    padding-top: 20px;
+}
+.right .content-nice .nice-title p{
+    color: #65625d;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.right .content-nice .nice-card .col-md-3{
+}
+.right .content-nice .nice-card .col-md-3 .card{
+    width: 162px;
+    height: 196px;
+    background: white;
+    position: relative;
+    margin-left: -7px;
+    top: 60px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 992px) {
+    .right .content-nice .nice-card .col-md-3 {
+        width:24%;
+        float: left;
+    }
+}
+
+.right .content-nice .nice-card .col-md-3 .card:hover{
+
+    /*上升动画*/
+    transform:translateY(-5px);
+    transition: 0.3s;
+
+}
+
+
+.right .content-nice .nice-card .col-md-3 .card img{
+    width: 84px;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+
+}
+.right .content-nice .nice-card .col-md-3 .card .card-info{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    display: inline-block;
+}
+.right .content-nice .nice-card .col-md-3 .card .card-info p:nth-child(1){
+    font-weight: bold;
+    font-size: 16px;
+}
+.right .content-nice .nice-card .col-md-3 .card .card-info p:nth-child(4){
+    color: #d4ae61;
+    cursor: pointer;
+}
+/*咖啡星讲堂*/
+.right .right-talk{
+    width: 100%;
+    height: 413px;
+    margin-top: -20px;
+}
+.right .right-talk .content-talk{
+    width: 720px;
+    height: 413px;
+    margin: 0 auto;
+    position: relative;
+}
+.right .right-talk .content-talk .talk-title{
+    text-align: center;
+    padding-top: 20px;
+}
+.right .right-talk .content-talk .talk-title p{
+    color: #65625d;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.right .right-talk .content-talk .talk-card{
+    width: 1216px;
+    height: 249px;
+    margin-top: 20px;
+    position: relative;
+}
+.right .right-talk .content-talk .talk-card-scroll-left{
+    border-radius: 50%;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    background: white;
+    cursor: pointer;
+    height: 28.8px;
+    margin-top: 20px;
+    position: absolute;
+    padding: 2px 0px;
+    text-align: center;
+    top: 50%;
+    width: 28.8px;
+    z-index: 1;
+    margin-left: -250px;
+}
+.right .right-talk .content-talk .talk-card-scroll-right{
+    border-radius: 50%;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    background: white;
+    cursor: pointer;
+    height: 28.8px;
+    margin-top: 20px;
+    position: absolute;
+    padding: 2px 0px;
+    text-align: center;
+    top: 50%;
+    width: 28.8px;
+    z-index: 1;
+    margin-left: 950px;
+}
+.hidden{
+    display: none;
+}
+
+
+.right .right-talk .content-talk .talk-card ul{
+    list-style: none;
+
+}
+.right .right-talk .content-talk .talk-card ul li{
+    width: 290px;
+    height: 225px;
+    float: left;
+
+}
+.right .right-talk .content-talk .talk-card ul li .card{
+    width: 270px;
+    height: 100%;
+    background: white;
+    font-size: 18px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.right .right-talk .content-talk .talk-card ul li .card .talk-info{
+    margin-left: 10px;
+    line-height: 60px;
+}
+
+.right .right-talk .content-talk .talk-card ul li .card .img{
+    width: 270px;
+    height: 168px;
+    overflow: hidden;
+    position: relative;
+}
+.right .right-talk .content-talk .talk-card ul li .card .img .img-title{
+    font-size: 1.4rem;
+    background: #C2A661;
+    color: #FFF;
+    position: absolute;
+    padding: 4px 12px;
+    left: 0px;
+    top: 6px;
+}
+
+.right .right-talk .content-talk .talk-card ul li .card .img img{
+    width: 270px;
+    height: 168px;
+}
+
+/*登录界面加入星选俱乐部*/
+.right .right-join{
+    width: 100%;
+    height: 193px;
+    background: #ececec;
+
+}
+.right .right-join .right-join-content{
+    width: 30%;
+    margin: 0 auto;
+}
+.right .right-join .right-join-content h3{
+    padding-top: 20px;
+}
+
+.right .right-join .right-join-content .info{
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 16px;
+    margin-top: 20px;
+}
+.right .right-join .right-join-content a{
+    border: 1px solid #00A862;
+    border-radius: 48px;
+    box-sizing: border-box;
+    color: #00A862;
+    display: inline-block;
+    font-weight: 500;
+    outline: none;
+    overflow: hidden;
+    padding: 6px 18px;
+    position: relative;
+    transition-duration: 0.1s;
+    transition-property: background, border-color, color;
+    margin-top: 20px;
+}
+/*登录界面表单内容*/
+.right .right-content{
+    width: 100%;
+    height: 600px;
+}
+.right .right-content .right-join-content-inp{
+    width: 432px;
+    height: 30%;
+    margin: 0 auto;
+
+}
+.right .right-content .right-join-content-inp .right-join-content-input{
+    float: left;
+    position: relative;
+    margin-top: 30px;
+}
+.right .right-content .right-join-content-inp .right-join-content-input input {
+    width: 432px;
+    height: 34px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;
+    font-size: 16px;
+    opacity: 0.3;
+}
+.right .right-content .right-join-content-inp .right-join-content-input label{
+    color: rgba(0, 0, 0, 0.38);
+    top: 24px;
+    left: 0;
+    position: absolute;
+    font-size: 16px;
+    margin-top: -17px;
+    z-index: -1;
+
+}
+.right .right-content .right-join-content-inp .right-join-content-input .pwd{
+    margin-top: 46px;
+}
+
+.right .right-content .right-join-content-inp .right-join-content-check{
+    width: 100%;
+
+    float: left;
+}
+.right .right-content .right-join-content-inp .right-join-content-check input{
+    border: 1px solid #00A862;
+    border-radius: 8px;
+    float: left;
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.right .right-content .right-content-code{
+    width: 432px;
+    height: 200px;
+    background: green;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+}
+.right .right-content .right-content-code .login-btn{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.38);
+    margin-bottom: 4px;
+    font-weight: 700;
+    padding: 12px 24px;
+    background: #f7f7f7;
+    border-color: #f7f7f7;
+    color: rgba(0, 0, 0, 0.38);
+    cursor: not-allowed;
+    border-radius: 48px;
+
+}
+
+
+
+
+
+
+
